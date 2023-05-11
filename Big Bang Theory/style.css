@@ -1,0 +1,26 @@
+body{
+    background-color:lightblue; 
+    color:darkblue;
+}
+
+h1{
+    text-align: center;
+    
+
+}
+
+iframe{
+    margin-left:25%; 
+    width:50%; 
+    height:315px;
+}
+
+p{
+    margin-left:25%; 
+    width:50%; 
+    text-align:justify;
+}
+
+img{
+    height:400px;
+}
