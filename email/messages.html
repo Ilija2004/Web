@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="updateMsg()">
+    
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="danger">
+                
+  
+                    <ion-buttons slot="start">
+                      <ion-button href="index.html"><ion-icon name="arrow-back-outline"></ion-icon></ion-icon></ion-button>
+                    </ion-buttons>
+                    <ion-title>compose</ion-title>
+
+                    <ion-buttons slot="end">
+                        <ion-button onclick="deleteAll()"><ion-icon name="trash-outline"></ion-icon></ion-button>
+                        <ion-button onclick=""><ion-icon name="send-outline" ></ion-icon></ion-button>
+                      </ion-buttons>
+        
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+                <ng-template>
+                  <ion-header>
+                    <ion-toolbar color="danger">
+                      <ion-title id="subject"></ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button onclick="cancel()"><ion-icon name="close-outline"></ion-icon></ion-button>
+                      </ion-buttons>
+                    </ion-toolbar>
+                  </ion-header>
+                  <ion-content class="ion-padding">
+                    
+                      <ion-label id="RecievedFrom"></ion-label>
+                      </br></br>
+                      <ion-label id="Comments"></ion-label>
+                    
+                  </ion-content>
+                </ng-template>
+              </ion-modal>
+            <ion-list id="messages" name="messages"></ion-list>
+            <ion-button color="success"expand="block" href="index.html" >Back to Main</ion-button>
+        </ion-content>
+    </ion-app>
+</body>
+
+</html>
