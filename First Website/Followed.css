@@ -1,0 +1,272 @@
+body{
+    background-color: #31373f;
+    margin: 0;
+    align-content: center;
+    
+}
+
+#Container {
+    height: 100vh;
+    background-color: black;  
+}
+
+#header {
+    
+    position:fixed;
+    margin-top: px;
+    margin-left: 192px;
+    width: 100%;
+    height: 10%;
+    background-color:#202020;
+    z-index: 1;
+    
+}
+
+#Sidebar {
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    background-color: #232f3e;
+    float: left;   
+}
+
+#Footer {
+    position:fixed;
+    margin-left: 190px;
+    margin-top: 910px;
+    width: 100%;
+    height: 7%;
+    background-color:#202020;
+    z-index: 1;
+    bottom: inherit;
+}
+
+h7 {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 700px;
+    
+}
+
+#Footer2 {
+    position:fixed;
+    margin-left: 190px;
+    margin-top: 880px;
+    width: 100%;
+    height: 3%;
+    background-color: #bbb56b;
+    z-index: 1;
+    bottom: auto;
+
+}
+
+h8 {
+    
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 700px;
+    padding-top: 10px;
+    color: white;
+}
+.sideContainer
+{
+    position: fixed;
+    width: 10%;
+    height: 80%;
+    background-color: #232f3e; 
+}
+
+
+.sideCnt {
+    background: linear-gradient(to bottom,rgba(58,67,78,255) 60%,rgb(192, 192, 192, 255) 60%);
+    border: 2.5px solid #c0c0c0;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 40px;
+    display: inline-block;
+    animation:scalesideCnt infinite;
+}
+
+.sideCnt img {
+     
+    
+}
+
+h6{
+    font-family: sans-serif;
+    color: #232f3e;
+    font-size: 20px;
+    text-align: center;
+     
+}
+
+.sideCnt:hover{
+    animation:scalesideCnt  2s infinite;
+}
+
+@keyframes scalesideCnt
+{
+    0% 
+    {
+        transform:translateY(0px);
+    }
+    100%
+    {
+        transform:translateY(-15px);
+    }
+}
+
+h4 {
+    font-family: sans-serif;
+    margin-left: 50px;
+    margin-top: -70px;
+    float: left;
+    color:#bbb56b ;
+}
+
+#hp img{
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 5px;
+    float:left;
+    padding-bottom: 70px;
+
+}
+.topCnt {
+    width: 100px;
+    margin-top: -80px;
+    margin-left: 740px;
+}
+
+h3 {
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: -60px;
+    color: white;
+}
+
+.sideCnt2 {
+    background: linear-gradient(to bottom, rgba(0, 64, 122, 0) 60%,rgb(189, 183, 107) 60%);
+    border: 2.5px solid #bbb56b;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+    margin-top: 40px;
+    display: inline-block;
+    animation:scalesideCnt infinite;
+}
+
+.sideCnt img {
+}
+
+.sideCnt2:hover{
+    animation:scalesideCnt2  2s infinite;
+}
+
+@keyframes scalesideCnt2
+{
+    0% 
+    {
+        transform:translateY(0px);
+    }
+    100%
+    {
+        transform:translateY(-15px);
+    }
+}
+
+#mainbody2{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: #31373f;
+    width: 100%;
+    
+}
+.MainCnt {
+    background: linear-gradient(to bottom, rgba(0, 64, 122, 0) 60%,rgb(35, 47, 62) 60%);
+    border: 10px solid #232f3e;
+    width: 440px;
+    height:600px;
+    margin-left: 200px;
+    margin-top: 150px;
+    display: inline-block;
+    animation:scalesideCnt infinite;
+    align-content: center;
+}
+
+.box  {
+    background: linear-gradient(to right, rgba(0, 64, 122, 0) 0%,rgb(35, 47, 62) 0%);
+    border: 2px solid #232f3e;
+    width: 180px;
+    height: 72px;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-left: 1550px;
+}
+
+.box img {
+    height : 80px;
+    margin-top: -7px;
+}
+
+h9 {
+    font-family: sans-serif;
+    margin-left: 87px;
+    margin-top: -55px;
+    float: left;
+    color:#bbb56b;
+}
+
+h10 {
+    font-family: sans-serif;
+    color:#bbb56b;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-left: 30px;
+    position: fixed
+    
+}
+
+h11 {
+    position:absolute;
+    font-family: sans-serif;
+    color:#bbb56b;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+h12{
+    position: absolute;
+    font-family: sans-serif;
+    color:white;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-left: 230px;
+    animation: textchange;
+  
+}
+
+h12:hover{
+    animation:textchange 2s infinite;
+}
+
+@keyframes textchange {
+    0% {
+        font-style: ;
+    }    
+    
+    100% {
+        font-style: italic;
+    }   
+}
+
+    
